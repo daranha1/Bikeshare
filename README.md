@@ -10,6 +10,16 @@ July 30, 2020.
 
 Bikeshare
 
+### Bikeshare Image
+
+<figure>
+    <img src = "images/The-Capital-Bikeshare.png" width="600"/>
+    <figcaption>
+        <a href ="https://upload.wikimedia.org/wikipedia/commons/5/54/Capital_Bikeshare_station_outside_Eastern_Market_Metro.jpg">
+        https://upload.wikimedia.org/wikipedia/commons/5/54/Capital_Bikeshare_station_outside_Eastern_Market_Metro.jpg</a>
+    </figcaption>
+</figure>
+
 ### Description
 
 A Python script is used to explore data related to bike share systems for three major cities in the United States : <br/>
