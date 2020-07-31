@@ -30,6 +30,16 @@ e. displays it to the console<br/>
 |               |  2. new_york_city.csv  |
 |               |  3. washington.csv     |
 
+### Software
+
+| Software       |  versions |
+|----------------|-----------|
+| 1. python      |  3.7.6    |
+| 2. anaconda    |  4.8.3    |
+| 3. pandas      |  1.0.1    |
+| 4. numpy       |  1.18.1   |
+| 5. prettytable |  0.7.2    |
+
 ### Credits
 
 | Topic           |  Title and Link
