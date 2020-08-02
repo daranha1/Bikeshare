@@ -51,7 +51,6 @@ def check_Valid_Input(inputMsg, nameList,name,limit):
             else:
                 nameInt = int(nameStr)
 
-            #print ('nameInt : ', nameInt)
             #Invalid numbers do not correspond to the items in name_Array
 
             if nameInt >= limit or nameInt < 0:
@@ -92,27 +91,31 @@ def get_filters():
     print('=============================================\n')
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    # call function check_Valid_Input to process the city
-    
-    cityInputMsg = "Please Enter a number related to a City : \n\n" \
-                   "1=Chicago, 2=New York City OR 3=Washington  OR 0=quit\n"
+    # call function check_Valid_Input to process the city    
+    newLine1 ="\n"
+    newLine2  = "\n\n"
+    cityMsg1 = "Please Enter a number related to a City : "
+    cityMsg2 = "1=Chicago, 2=New York City OR 3=Washington  OR 0=quit"
+    cityInputMsg = cityMsg1 +  newLine2 + cityMsg2 + newLine1
 
     cityNameList = ['Chicago', 'New York City', 'Washington']
     city = check_Valid_Input (cityInputMsg, cityNameList, "city", 4) 
 
     # get user input for month (all, january, february, ... , june)
     # call function check_Valid_Input to process the month
-    monthInputMsg = "Please Enter a number related to a Month :\n\n" \
-                    "1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=All OR 0=quit\n"                   
- 
+    monthMsg1 = "Please Enter a number related to a Month : "
+    monthMsg2 = "1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=All OR 0=quit"
+    monthInputMsg = monthMsg1 + newLine2 + monthMsg2 + newLine1
+   
     monthNameList = ['January','February','March','April','May','June','All']  
     month = check_Valid_Input (monthInputMsg, monthNameList, "month", 8)
 
-     # get user input for day of the week
-    # call function check_Valid_Input to process the day   
-    dayInputMsg = "Please Enter a number related to a day of the week :\n\n" \
-                  "1-Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday OR 8=ALL OR 0=quit\n"
-
+    # get user input for day of the week
+    # call function check_Valid_Input to process the day 
+    dayMsg1 = "Please Enter a number related to a day of the week : "
+    dayMsg2 = "1-Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday OR 8=ALL OR 0=quit"
+    dayInputMsg = dayMsg1 + newLine2 + dayMsg2 + newLine1
+    
     dayList = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday', 'All']
     day = check_Valid_Input (dayInputMsg, dayList, "day", 9)   
 
@@ -142,6 +145,7 @@ def load_data(city, month, day):
     print ("\n *** Processing Bike Share Data using Filters : {}".format(cityStr + monthStr + dayStr) + " ***\n")
     print ('-'*80)    
 
+    
     print ('\n\n---------- Basic Statistics of the dataset for : ' + city + ' when file is loaded -------------------------------\n\n', \
           df.describe(include='all'))
 
@@ -189,20 +193,22 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\n----------------- Calculating The Most Frequent Times of Travel...  ----------------------\n')
-
+    lineBreak = '\n'
+    #lineBreak2 = '\n\n'
+    horizLine1 = '-----------------'
+    horizLine2 = '----------------------'
+    title1    = '  Calculating The Most Frequent Times of Travel...  '
+    print (lineBreak + horizLine1 + title1 + horizLine2 + lineBreak)
+    
     start_time = time.time()  
 
     # Time Stats in tabular form
     ts = PrettyTable()
     ts.field_names = ["Most Common Month","Most Common Day","Most Common Start Hour"]
-
-    # ts.add_row([df2['month_name'].value_counts().idxmax(), df2['day_of_week'].value_counts().idxmax(), df2['start_hour'].value_counts().idxmax()])
-    # ts.add_row([df2.loc[:,'month_name'].mode()[0], df2.loc[:,'day_of_week'].mode()[0], df2['start_hour'].mode()[0]])
-
+   
     ts.add_row([df['month_name'].mode()[0], df['week_day'].mode()[0], df['start_hour'].mode()[0]])
-    print(ts)      
-
+    
+    print(ts)    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -291,12 +297,18 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
+    newLine1 = "\n"
+    lineInTitle1   = "-----------------------"
+    lineInTitle2   = "---------------------------------------------"
+
     print('\n----------------------- Calculating User Stats ...  -------------------------------------------\n')
     start_time = time.time()   
 
     # ----------------------------------------- U S E R T Y P E ---------------------------------------------    
 
-    print ("-----------------------  U S E R  T Y P E   I N F O ---------------------------------------------")
+    userTypeHeader = "  U S E R  T Y P E   I N F O  "
+    
+    print (lineInTitle1 + userTypeHeader + lineInTitle2)
 
     print ("\nMissing values in User Type : ",df['User Type'].isnull().sum())  
     
@@ -306,15 +318,15 @@ def user_stats(df):
     y1.add_row (([df["User Type"].value_counts(ascending=False, dropna=True)]))    
     print(y1)
 
-    # ---------------------------------------------------- G E N D E R ---------------------------------    
+    # ---------------------------------------------------- G E N D E R ---------------------------------
+    
+    genderHeader = " G E N D E R   I N F O "
+
     if 'Gender' in df.columns:
-        print ()
-        print ("-----------------------  G E N D E R   I N F O ----------------------------------------")
-        print ()
+        print (newLine1 + lineInTitle1 + genderHeader + lineInTitle2 + newLine1)
         print ("\nMissing Values in Gender : ", df['Gender'].isnull().sum())
         print ("\nSum of Males and Females : ", df['Gender'].notnull().sum())
-        print ()       
-
+        
         # Display counts of gender in a tabular form
         x1 = PrettyTable()
         x1.field_names = ["Gender"]        
@@ -331,9 +343,9 @@ def user_stats(df):
 
     # Washington bikeshare file lacks the Birth Year and Gender columns
     #
+    birthYrHeader = " B I R T H  Y E A R   I N F O "
     if 'Birth Year' in df.columns:
-        print ()
-        print ("-----------------------  B I R T H  Y E A R   I N F O ---------------------------------------------")
+        print (newLine1 + lineInTitle1 + birthYrHeader + lineInTitle2 + newLine1)        
         print ("\nMissing Birth year values : ", df['Birth Year'].isnull().sum(axis=0))
         print ("\nNo. of Birth year values : ", df['Birth Year'].notnull().sum(axis=0))
         print ()
