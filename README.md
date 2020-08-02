@@ -141,8 +141,8 @@ Move to the bikeshare directory and at the command line enter bikeshare.py and f
   
 | Git                 | Links                                                         |
 |---------------------|---------------------------------------------------------------|
-| **Create a Branch** | How to Create Branch in Git Repository                        |
-|                     | Written by Rahul, Updated on November 21, 2017                |
+| **Create a Branch** | How to Create Branch in Git Repository<br/>                   |
+|                     | Written by Rahul, Updated on November 21, 2017<br/>           |
 |                     | <http://tecadmin.net/create-branch-in-git/>                   |
 |                     |                                                               |
 | **Git Branch**      | How To Push Git Branch To Remote<br/>                         |
@@ -153,5 +153,5 @@ Move to the bikeshare directory and at the command line enter bikeshare.py and f
 |                     |                                                               |
 | **Git Cheat Sheet** | <https://education.github.com/git-cheat-sheet-education.pdf>  |
 |                     |                                                               |
-| **Udacity**         | Udacity Git Commit Message Style Guide                        |
+| **Udacity**         | Udacity Git Commit Message Style Guide<br/>                   |
 |                     | <https://udacity.github.io/git-styleguide/>                   |
