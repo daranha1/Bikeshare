@@ -40,15 +40,18 @@ e. displays it to the console<br/>
 |               |  2. new_york_city.csv  |
 |               |  3. washington.csv     |
 
-### Software
+### Software and OS
 
-| Software       |  versions |
-|----------------|-----------|
-| 1. python      |  3.7.6    |
-| 2. anaconda    |  4.8.3    |
-| 3. pandas      |  1.0.1    |
-| 4. numpy       |  1.18.1   |
-| 5. prettytable |  0.7.2    |
+| Software         |  version          |
+|------------------|-------------------|
+| 1. python        |  3.7.6            |
+| 2. anaconda      |  4.8.3            |
+| 3. pandas        |  1.0.1            |
+| 4. numpy         |  1.18.1           |
+| 5. prettytable   |  0.7.2            |
+| 6. git           |  2.27.0.windows.1 |
+| 7. visual studio |  1.46.1           |
+| 8. Windows 10    |  Pro 64 bit       |
 
 ### Python Functions
 
