@@ -53,6 +53,31 @@ e. displays it to the console<br/>
 | 7. visual studio |  1.46.1           |
 | 8. Windows 10    |  Pro 64 bit       |
 
+### Programming Environment Setup
+
+If  one is a novice Python user please refer to the following links:<br/>
+for Windows 10, Mac OS, and Linux
+
+1. How to Set Up Python on Windows 10<br/>
+&nbsp;By Afam Onyimadu / Sep 13, 2018 / Windows<br/>
+&nbsp;<https://www.maketecheasier.com/set-up-python-windows10/><br/>
+
+2. How to Set Up a Python Development Environment on Windows<br/>
+&nbsp;<https://www.davidbaumgold.com/tutorials/set-up-python-windows/><br/>
+
+3. How to create a Python 3 virtual environment in Windows 10, November 15, 2018<br/>
+&nbsp;<https://www.techcoil.com/blog/how-to-create-a-python-3-virtual-environment-in-windows-10/><br/>
+
+4. Python Setup For Mac OS, July 26, 2020<br/>
+&nbsp;<https://www.youtube.com/watch?v=qBm22KU1-f4>
+
+5. The right and wrong way to set Python 3 as default on a Mac, 01 May 2019<br/>
+&nbsp;<https://opensource.com/article/19/5/python-3-default-mac>
+
+6. How to Setup Python Development Environment in Ubuntu and Fedora<br/>
+&nbsp;BY ARINDAM - UPDATED ON JUNE 8, 2020<br/>
+&nbsp;<https://www.debugpoint.com/2020/06/setup-python-environment-ubuntu-fedora/>
+
 ### Python Functions
 
 | Input Functions                     | Features                                                                                    |
