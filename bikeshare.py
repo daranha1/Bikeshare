@@ -297,12 +297,18 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
+    newLine1 = "\n"
+    lineInTitle1   = "-----------------------"
+    lineInTitle2   = "---------------------------------------------"
+
     print('\n----------------------- Calculating User Stats ...  -------------------------------------------\n')
     start_time = time.time()   
 
     # ----------------------------------------- U S E R T Y P E ---------------------------------------------    
 
-    print ("-----------------------  U S E R  T Y P E   I N F O ---------------------------------------------")
+    userTypeHeader = "  U S E R  T Y P E   I N F O  "
+    
+    print (lineInTitle1 + userTypeHeader + lineInTitle2)
 
     print ("\nMissing values in User Type : ",df['User Type'].isnull().sum())  
     
@@ -312,15 +318,15 @@ def user_stats(df):
     y1.add_row (([df["User Type"].value_counts(ascending=False, dropna=True)]))    
     print(y1)
 
-    # ---------------------------------------------------- G E N D E R ---------------------------------    
+    # ---------------------------------------------------- G E N D E R ---------------------------------
+    
+    genderHeader = " G E N D E R   I N F O "
+
     if 'Gender' in df.columns:
-        print ()
-        print ("-----------------------  G E N D E R   I N F O ----------------------------------------")
-        print ()
+        print (newLine1 + lineInTitle1 + genderHeader + lineInTitle2 + newLine1)
         print ("\nMissing Values in Gender : ", df['Gender'].isnull().sum())
         print ("\nSum of Males and Females : ", df['Gender'].notnull().sum())
-        print ()       
-
+        
         # Display counts of gender in a tabular form
         x1 = PrettyTable()
         x1.field_names = ["Gender"]        
@@ -337,9 +343,9 @@ def user_stats(df):
 
     # Washington bikeshare file lacks the Birth Year and Gender columns
     #
+    birthYrHeader = " B I R T H  Y E A R   I N F O "
     if 'Birth Year' in df.columns:
-        print ()
-        print ("-----------------------  B I R T H  Y E A R   I N F O ---------------------------------------------")
+        print (newLine1 + lineInTitle1 + birthYrHeader + lineInTitle2 + newLine1)        
         print ("\nMissing Birth year values : ", df['Birth Year'].isnull().sum(axis=0))
         print ("\nNo. of Birth year values : ", df['Birth Year'].notnull().sum(axis=0))
         print ()
