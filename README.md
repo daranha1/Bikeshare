@@ -167,4 +167,29 @@ Move to the bikeshare directory and at the command line enter bikeshare.py and f
 |                          |                                                                                                            |
 | **Examples**             | 4. Using Markdown: Linking documents/websites, adding images, and stylising text<br/>                      |
 |                          |   <https://support.awardforce.com/hc/en-us/articles/207384793-Using-Markdown-Linking-documents-websites-adding-images-and-stylising-text> |
-|                          |                                                                                                            |
+
+| Python References       | Links                                                                                                      |
+|-------------------------|------------------------------------------------------------------------------------------------------------|
+| **Dates**               | 1. <https://www.listendata.com/2019/07/how-to-filter-pandas-dataframe.html>                                |
+|                         | 2. <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.isin.html>                 |
+|                         | 3. <https://www.geeksforgeeks.org/creating-pandas-dataframe-using-list-of-lists/>                          |
+|                         | 4. <https://www.geeksforgeeks.org/python-pandas-series-dt-hour/>                                           |
+|                         |                                                                                                            |
+| **Pandas**              | 1. <http://www.datasciencemadesimple.com/get-year-from-date-pandas-python-2/>                              |
+|                         | 2. <https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column>          |
+|                         | 3. <https://www.geeksforgeeks.org/python-pandas-dataframe-astype/>                                         |
+|                         | 4. <https://dfrieds.com/data-analysis/value-counts-python-pandas.html>                                     |
+|                         | 5. <https://www.geeksforgeeks.org/drop-rows-from-pandas-dataframe-with-missing-values-or-nan-in-columns/>  |
+|                         | 6. <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.astype.html>               |
+|                         | 7. <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.info.html>                 |
+|                         |                                                                                                            |
+| **PrettyTable**         | 1. <https://pypi.org/project/PrettyTable/>                                                                 |
+|                         | 2. <http://zetcode.com/python/prettytable/>                                                                |
+|                         |                                                                                                            |
+| **Raw Data Json**       | 1. <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_json.html>              |
+|                         | 2. <https://pythonbasics.org/pandas-json/>                                                                 |
+|                         | 3. <https://datatofish.com/export-pandas-dataframe-json/>                                                  |
+|                         | 4. <https://www.journaldev.com/16016/python-parse-json-dumps-loads>                                        |
+|                         |                                                                                                            |
+| **Two Column GroupBy**  | 1. <https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python>|
+|                         | 2. <https://chrisalbon.com/python/data_wrangling/pandas_selecting_rows_on_conditions/>                                            |
