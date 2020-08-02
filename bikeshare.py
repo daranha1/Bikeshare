@@ -142,6 +142,7 @@ def load_data(city, month, day):
     print ("\n *** Processing Bike Share Data using Filters : {}".format(cityStr + monthStr + dayStr) + " ***\n")
     print ('-'*80)    
 
+    
     print ('\n\n---------- Basic Statistics of the dataset for : ' + city + ' when file is loaded -------------------------------\n\n', \
           df.describe(include='all'))
 
@@ -189,20 +190,22 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\n----------------- Calculating The Most Frequent Times of Travel...  ----------------------\n')
-
+    lineBreak = '\n'
+    #lineBreak2 = '\n\n'
+    horizLine1 = '-----------------'
+    horizLine2 = '----------------------'
+    title1    = '  Calculating The Most Frequent Times of Travel...  '
+    print (lineBreak + horizLine1 + title1 + horizLine2 + lineBreak)
+    
     start_time = time.time()  
 
     # Time Stats in tabular form
     ts = PrettyTable()
     ts.field_names = ["Most Common Month","Most Common Day","Most Common Start Hour"]
-
-    # ts.add_row([df2['month_name'].value_counts().idxmax(), df2['day_of_week'].value_counts().idxmax(), df2['start_hour'].value_counts().idxmax()])
-    # ts.add_row([df2.loc[:,'month_name'].mode()[0], df2.loc[:,'day_of_week'].mode()[0], df2['start_hour'].mode()[0]])
-
+   
     ts.add_row([df['month_name'].mode()[0], df['week_day'].mode()[0], df['start_hour'].mode()[0]])
-    print(ts)      
-
+    
+    print(ts)    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
