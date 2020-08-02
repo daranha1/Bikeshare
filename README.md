@@ -78,6 +78,10 @@ for Windows 10, Mac OS, and Linux
 &nbsp;BY ARINDAM - UPDATED ON JUNE 8, 2020<br/>
 &nbsp;<https://www.debugpoint.com/2020/06/setup-python-environment-ubuntu-fedora/>
 
+### Run Program
+
+Move to the bikeshare directory and at the command line enter bikeshare.py and follow instructions (user prompts)
+
 ### Python Functions
 
 | Input Functions                     | Features                                                                                    |
