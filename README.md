@@ -155,3 +155,16 @@ Move to the bikeshare directory and at the command line enter bikeshare.py and f
 |                     |                                                               |
 | **Udacity**         | Udacity Git Commit Message Style Guide<br/>                   |
 |                     | <https://udacity.github.io/git-styleguide/>                   |
+
+| Markdown                 | Links                                                                                                      |
+|---------------------------------------------------------------------------------------------------------------------------------------|
+| **Basic Syntax**         | 1. <https://www.markdownguide.org/basic-syntax>                                                            |
+|                          |                                                                                                            |
+| **Markdown Cheat Sheet** | 2. <https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf>                                         |
+|                          |                                                                                                            |
+| **Mastering Markdown**   | 3. GitHub Guides<br/>                                                                                      |
+|                          |    <https://guides.github.com/features/mastering-markdown/>                                                |
+|                          |                                                                                                            |
+| **Examples**             | 4. Using Markdown: Linking documents/websites, adding images, and stylising text<br/>                      |
+|                          |   <https://support.awardforce.com/hc/en-us/articles/207384793-Using-Markdown-Linking-documents-websites-adding-images-and-stylising-text> |
+|                          |                                                                                                            |
