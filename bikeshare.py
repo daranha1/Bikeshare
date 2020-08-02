@@ -51,7 +51,6 @@ def check_Valid_Input(inputMsg, nameList,name,limit):
             else:
                 nameInt = int(nameStr)
 
-            #print ('nameInt : ', nameInt)
             #Invalid numbers do not correspond to the items in name_Array
 
             if nameInt >= limit or nameInt < 0:
@@ -92,27 +91,31 @@ def get_filters():
     print('=============================================\n')
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    # call function check_Valid_Input to process the city
-    
-    cityInputMsg = "Please Enter a number related to a City : \n\n" \
-                   "1=Chicago, 2=New York City OR 3=Washington  OR 0=quit\n"
+    # call function check_Valid_Input to process the city    
+    newLine1 ="\n"
+    newLine2  = "\n\n"
+    cityMsg1 = "Please Enter a number related to a City : "
+    cityMsg2 = "1=Chicago, 2=New York City OR 3=Washington  OR 0=quit"
+    cityInputMsg = cityMsg1 +  newLine2 + cityMsg2 + newLine1
 
     cityNameList = ['Chicago', 'New York City', 'Washington']
     city = check_Valid_Input (cityInputMsg, cityNameList, "city", 4) 
 
     # get user input for month (all, january, february, ... , june)
     # call function check_Valid_Input to process the month
-    monthInputMsg = "Please Enter a number related to a Month :\n\n" \
-                    "1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=All OR 0=quit\n"                   
- 
+    monthMsg1 = "Please Enter a number related to a Month : "
+    monthMsg2 = "1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=All OR 0=quit"
+    monthInputMsg = monthMsg1 + newLine2 + monthMsg2 + newLine1
+   
     monthNameList = ['January','February','March','April','May','June','All']  
     month = check_Valid_Input (monthInputMsg, monthNameList, "month", 8)
 
-     # get user input for day of the week
-    # call function check_Valid_Input to process the day   
-    dayInputMsg = "Please Enter a number related to a day of the week :\n\n" \
-                  "1-Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday OR 8=ALL OR 0=quit\n"
-
+    # get user input for day of the week
+    # call function check_Valid_Input to process the day 
+    dayMsg1 = "Please Enter a number related to a day of the week : "
+    dayMsg2 = "1-Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday OR 8=ALL OR 0=quit"
+    dayInputMsg = dayMsg1 + newLine2 + dayMsg2 + newLine1
+    
     dayList = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday', 'All']
     day = check_Valid_Input (dayInputMsg, dayList, "day", 9)   
 
